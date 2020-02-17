@@ -63,6 +63,7 @@ public class DogTest {
     public void testEatFood() {
         Dog newDog = new Dog(null, null, null);
         newDog.eat(new Food());
+        newDog.eat(new Food());
         Integer expected = 2;
         Integer actual = newDog.getNumberOfMealsEaten();
         Assert.assertEquals(expected, actual);
